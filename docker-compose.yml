@@ -5,11 +5,11 @@ services:
     build:
       context: ./docker/app
       dockerfile: Dockerfile
-    image: wp-denver/app:latest
+    image: sprout/app:latest
     networks:
-      - appnet
+      - sprout
     volumes:
-      - ./application:/var/www/html/public
+      - .:/var/www/html/public
     working_dir: /var/www/html/public
     ports:
       - "80:80"
@@ -22,14 +22,14 @@ services:
       MYSQL_USER: dbuser
       MYSQL_PASSWORD: dbpass
     networks:
-      - appnet
+      - sprout
     volumes:
       - dbdata:/var/lib/mysql
     ports:
       - "3306:3306"
 
 networks:
-  appnet:
+  sprout:
     driver: bridge
 
 volumes:
