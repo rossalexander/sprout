@@ -42,6 +42,7 @@ RUN ln -sf /dev/stdout /var/log/nginx/access.log \
 ADD default /etc/nginx/sites-available/default
 ADD supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 ADD php-fpm.conf /etc/php/7.4/fpm/php-fpm.conf
+ADD php.ini /etc/php/7.4/cli/conf.d/99-sprout.ini
 ADD start-container /usr/bin/start-container
 RUN chmod +x /usr/bin/start-container
 

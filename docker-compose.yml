@@ -1,9 +1,9 @@
+# For more information: https://rossalexander.dev/sprout
 version: '3'
-
 services:
   app:
     build:
-      context: ./docker/app
+      context: ./vendor/sprout/runtimes/7.4
       dockerfile: Dockerfile
     image: sprout/app:latest
     networks:

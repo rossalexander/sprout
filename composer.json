@@ -1,0 +1,32 @@
+{
+  "name": "sprout/sprout",
+  "description": "Docker files for running a WordPress application and optionally using the Roots ecosystem.",
+  "keywords": [
+    "wordpress",
+    "docker"
+  ],
+  "support": {
+    "issues": "https://github.com/rossalexander/sprout/issues",
+    "source": "https://github.com/rossalexander/sprout"
+  },
+  "authors": [
+    {
+      "name": "Ross Alexander",
+      "email": "email@rossalexander.dev"
+    }
+  ],
+  "license": "MIT",
+  "require": {
+    "php": "^7.3|^8.0"
+  },
+  "bin": [
+    "bin/sprout"
+  ],
+  "autoload": {
+    "psr-4": {
+      "Sprout\\Sprout\\": "src/"
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
