@@ -22,7 +22,7 @@ fi
 function sprout_is_not_running {
   echo -e "${WHITE}Sprout is not running.${NC}" >&2
   echo "" >&2
-  echo -e "${WHITE}Sprout can be started using with:${NC} './vendor/bin/sprout up' or './vendor/bin/sprout up -d'" >&2
+  echo -e "${WHITE}Sprout can be started with:${NC} './vendor/bin/sprout up' or './vendor/bin/sprout up -d'" >&2
   exit 1
 }
 

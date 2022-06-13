@@ -1,4 +1,4 @@
-# For more information: https://rossalexander.dev/sprout
+# For more information: https://github.com/rossalexander/sprout
 version: '3'
 services:
   app:
